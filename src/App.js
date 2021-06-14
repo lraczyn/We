@@ -1,11 +1,13 @@
+import ScrollIntoView from 'react-scroll-into-view';
 import Footer from './components/Footer.js';
 import Navbar from './components/Navbar.js';
+import About from './components/About.js';
 import './App.css';
 
 function App() {
   return (
     <div className="bg-black">
-      <div className="bg-hero-pattern bg-fixed h-screen pt-64">
+      <div className="bg-hero-pattern bg-fixed h-screen pt-64" id="hero_">
         <div className="lg:w-3/5">
           <div className="lg:flex items-center text-gray-200 text-center ">
             <img
@@ -41,9 +43,10 @@ function App() {
         <div className="lg:w-2/5"></div>
       </div>
       <Navbar />
+      <About id="about_component" />
 
       <div className="">
-        <div className="py-32 bg-red-200">
+        <div className="py-32 bg-yellow-500">
           <div className="px-12">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero dicta
             cum exercitationem ut nulla maiores, ipsam voluptatem rerum, iusto
