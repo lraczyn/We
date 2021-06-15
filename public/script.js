@@ -9,11 +9,3 @@ function fixNav() {
     my_nav.classList.add('opacity-80');
   }
 }
-
-const aboutLink = document.querySelector('about');
-const aboutComponent = doc.querySelector('about_component');
-aboutLink.addEventListener('click', navigateToAbout, false);
-
-function navigateToAbout(e) {
-  aboutComponent.scrollIntoVie();
-}

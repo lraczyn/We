@@ -12,7 +12,7 @@ export default function Navbar() {
         <div className="flex  text-white lg:text-4xl justify-between ">
           <ScrollTo selector="#hero_">
             <span className="">
-              <div className="flex hover:text-yellow-500 ">
+              <div className="flex  ">
                 <svg
                   fill="white"
                   width="24"
@@ -51,33 +51,40 @@ export default function Navbar() {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="flex items-center">
-                <a
+                <ul
                   className={
                     'text-white   px-2 py-2 lg:text-xl flex items-center text-semibold font-bold'
                   }
                 >
                   <ScrollTo selector="#about_">
-                    <span className="inline-block hover:text-yellow-500 mx-4 ">
-                      ABOUT
-                    </span>
+                    <li>
+                      <button
+                        // href="#"
+                        className="inline-block hover:text-yellow-500 mx-4 "
+                      >
+                        ABOUT
+                      </button>
+                    </li>
                   </ScrollTo>
                   <ScrollTo selector="#skills_">
-                    <span className="inline-block hover:text-yellow-500 mx-4">
+                    <button className="inline-block hover:text-yellow-500 mx-4">
                       SKILLS
-                    </span>
+                    </button>
                   </ScrollTo>
                   <ScrollTo selector="#projects_">
-                    <span className="inline-block hover:text-yellow-500 mx-4">
+                    <button className="inline-block hover:text-yellow-500 mx-4">
                       PROJECTS
-                    </span>
+                    </button>
                   </ScrollTo>
                   <ScrollTo selector="#resume_">
-                    <span className="inline-bloc hover:text-yellow-500 mx-4">
-                      <i class="fas fa-file pr-2"></i>
-                      RESUME
-                    </span>
+                    <button className="inline-bloc border- hover:text-yellow-500 mx-4">
+                      <a href="https://drive.google.com/file/d/1VZBEIpzzIZ2cBKtrqLStVG-pn-3hUmxv/view?usp=sharing">
+                        <i className="fas fa-file pr-2"></i>
+                        RESUME
+                      </a>
+                    </button>
                   </ScrollTo>
-                </a>
+                </ul>
               </li>
             </ul>
           </div>
