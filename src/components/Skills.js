@@ -1,30 +1,79 @@
 import React from 'react';
 
+const skills = [
+  {
+    id: 'id1',
+    image: 'fab fa-python',
+    main_text: 'Python',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero repellat molestias officiis! Adipisci, culpa exercitationem!',
+  },
+  {
+    id: 'id2',
+    image: 'fab fa-react',
+    main_text: 'React',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero repellat molestias officiis! Adipisci, culpa exercitationem!',
+  },
+  {
+    id: 'id3',
+    image: 'fas fa-code',
+    main_text: 'JavaScript, HTML, CSS',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero repellat molestias officiis! Adipisci, culpa exercitationem!',
+  },
+  {
+    id: 'id4',
+    image: 'fab fa-github',
+    main_text: 'Git',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero repellat molestias officiis! Adipisci, culpa exercitationem!',
+  },
+  {
+    id: 'id5',
+    image: 'fas fa-database',
+    main_text: 'Database, SQL',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero repellat molestias officiis! Adipisci, culpa exercitationem!',
+  },
+  {
+    id: 'id6',
+    image: 'fas fa-filter',
+    main_text: 'Machine Learning, Artificial Intelligence',
+    description: 'continuously learn more ... ',
+  },
+  {
+    id: 'id7',
+    image: 'fas fa-user-plus',
+    main_text: '',
+    description: 'continuously learn more ... ',
+  },
+];
+
 export default function Skills() {
   return (
-    <div id="skills_" className="bg-blue-500 h-screen text-black">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos delectus
-      corrupti consequuntur, nesciunt blanditiis laborum, saepe earum nobis,
-      perspiciatis ut dolores. Earum vel ipsum, cupiditate accusantium eligendi
-      doloremque saepe laboriosam minima illum repudiandae dolorem odit iusto
-      minus commodi quo consequuntur asperiores sed impedit sint. Ex unde sint
-      repellendus commodi! Voluptate distinctio sapiente autem. Quos, distinctio
-      dolore cupiditate impedit voluptate ex aliquid nam nihil cum earum ipsa
-      nisi, incidunt eum hic ut? Odit vero itaque aliquam rem officiis,
-      excepturi sequi nobis ut natus eos temporibus perferendis minus, nulla
-      placeat corporis facere voluptatibus id quam exercitationem doloremque.
-      Ullam provident inventore doloribus eius alias, molestiae debitis natus.
-      Provident nemo optio cupiditate eligendi consectetur dolorem minima ex
-      adipisci voluptatibus sint, fugit temporibus repellendus iste corporis
-      dolore ut ratione assumenda officia consequatur, perspiciatis, libero
-      nulla suscipit fuga repellat. Minus vitae dignissimos animi impedit
-      exercitationem quaerat debitis quas sunt omnis nesciunt similique commodi
-      assumenda quam quisquam illo veritatis nostrum vero repellat magnam
-      blanditiis, rem repudiandae. Quas tempore ut provident! At sit sed illum
-      quam dolore nesciunt recusandae nulla ex tempora omnis reprehenderit
-      incidunt mollitia veritatis saepe maiores fugit atque repellendus officia
-      eius aperiam quas, assumenda qui! Quae voluptates molestias mollitia aut,
-      maxime quaerat repudiandae voluptas id!
-    </div>
+    <section id="skills_" className="bg-black text-white lg:h-screen">
+      <div className="pt-64 text-center">
+        <h1 className="text-4xl font-extrabold text-yellow-500 text-center">
+          Skills
+        </h1>
+        <h3 className="text-xl pb-12">
+          Below are some of my skills, and I'm continuously learn more:
+        </h3>
+        <ul className="lg:flex text-center justify-between px-8">
+          {skills.map((skill) => {
+            return (
+              <li key={skill.id} className="container items-center ">
+                <div className="text-white text-9xl">
+                  <i className={skill.image}></i>
+                </div>
+                <div className="font-bold pt-4 pb-6">{skill.main_text}</div>
+                <div className="px-12">{skill.description}</div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </section>
   );
 }

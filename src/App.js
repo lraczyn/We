@@ -1,4 +1,3 @@
-import ScrollIntoView from 'react-scroll-into-view';
 import Footer from './components/Footer.js';
 import Navbar from './components/Navbar.js';
 import Projects from './components/Projects.js';
