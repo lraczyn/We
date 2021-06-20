@@ -11,7 +11,7 @@ const skills = [
   {
     id: 'id2',
     image: 'fab fa-react',
-    main_text: 'React',
+    main_text: 'React, Tailwind CSS',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero repellat molestias officiis! Adipisci, culpa exercitationem!',
   },
@@ -52,12 +52,12 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills_" className="bg-black text-white lg:h-screen">
-      <div className="pt-64 text-center">
-        <h1 className="text-4xl font-extrabold text-yellow-500 text-center">
+    <section id="skills_" className="flex bg-black text-white lg:h-screen">
+      <div className="m-auto py-12">
+        <h1 className="text-4xl font-extrabold text-yellow-500 text-center pt-2">
           Skills
         </h1>
-        <h3 className="text-xl pb-12">
+        <h3 className="text-xl pb-12 text-center">
           Below are some of my skills, and I'm continuously learn more:
         </h3>
         <ul className="lg:flex text-center justify-between px-8">

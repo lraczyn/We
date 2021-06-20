@@ -2,7 +2,7 @@ import React from 'react';
 import ScrollTo from 'react-scroll-into-view';
 
 export default function Navbar() {
-  const [navbarOpen, setNavbarOpen] = React.useState(true);
+  const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
       <nav
@@ -56,6 +56,16 @@ export default function Navbar() {
                     'text-white   px-2 py-2 lg:text-xl flex items-center text-semibold font-bold'
                   }
                 >
+                  <ScrollTo selector="#hero_">
+                    <li>
+                      <button
+                        // href="#"
+                        className="inline-block hover:text-yellow-500 mx-4 "
+                      >
+                        HOME
+                      </button>
+                    </li>
+                  </ScrollTo>
                   <ScrollTo selector="#about_">
                     <li>
                       <button
@@ -78,7 +88,7 @@ export default function Navbar() {
                   </ScrollTo>
                   <ScrollTo selector="#resume_">
                     <button className="inline-bloc border- hover:text-yellow-500 mx-4">
-                      <a href="https://drive.google.com/file/d/1VZBEIpzzIZ2cBKtrqLStVG-pn-3hUmxv/view?usp=sharing">
+                      <a href="https://drive.google.com/file/d/172DWsDl_EonmluavkjZUxQzzHoFfrgvF/view?usp=sharing">
                         <i className="fas fa-file pr-2"></i>
                         RESUME
                       </a>

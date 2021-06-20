@@ -10,7 +10,7 @@ function App() {
     <div className="bg-black">
       <div className="bg-hero-pattern bg-fixed h-screen pt-64" id="hero_">
         <div className="lg:w-3/5">
-          <div className="lg:flex items-center text-gray-200 text-center ">
+          <div className="lg:flex items-center text-gray-200 text-center  sm:flex-row px-8">
             <img
               className="rounded-full border-8 border-yellow-gray-200 h-64 mr-12 ml-12 "
               src="https://media-exp3.licdn.com/dms/image/C4D03AQHtizseucp0mw/profile-displayphoto-shrink_200_200/0/1597159341693?e=1629331200&v=beta&t=ZphKotPdPLnnG9YgU30xpOlePrFztiirPkuCB6WqAr8"
@@ -23,21 +23,25 @@ function App() {
                 {' '}
                 Łukasz Raczyński
               </h2>
-              <h3 className="">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Molestiae, velit, omnis itaque molestias et quaerat rerum saepe
-                veniam reprehenderit ipsam recusandae exercitationem consequatur
-                fugit, aperiam corporis laborum reiciendis! In libero tenetur
-                odio adipisci corrupti sapiente obcaecati praesentium cupiditate
-                eius voluptates labore, perspiciatis dolor error ut, id nostrum
-                earum recusandae fuga nobis deserunt incidunt eos. Excepturi
-                distinctio, deleniti ex iusto eligendi qui nisi ab dicta, vero
-                possimus laudantium ad illum blanditiis, beatae minima!
-                Reprehenderit repudiandae et tempore unde architecto! Deserunt
-                saepe ullam doloremque error suscipit odio reiciendis,
-                exercitationem, commodi, ipsum ea officiis fugiat fuga eaque
-                consectetur molestiae! Voluptatum maxime officiis rem!
+              <h3 className=" mb-2 font-semibold">
+                Currently a specialist at the Institute of Nuclear Physics,
+                Polish Academy of Sciences
               </h3>
+              <ul className="list-disc text-left">
+                <li>
+                  Creating tensorflow, keras model in order that improving
+                  proton therapy site reliability{' '}
+                </li>
+                <li>
+                  Analyzing beam parameters using data from Cyclotrone Centre
+                  with Python, Jupyter Notebook
+                </li>
+                <li>
+                  Data analysis of beam energy loss between cyclotrone and
+                  therapy room
+                </li>
+                <li>Data analysis visualisation and reports</li>
+              </ul>
             </div>
           </div>
         </div>
