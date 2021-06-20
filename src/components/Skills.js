@@ -6,41 +6,38 @@ const skills = [
     image: 'fab fa-python',
     main_text: 'Python',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero repellat molestias officiis! Adipisci, culpa exercitationem!',
+      'Data analysis with Pandas, NumPy, Matplotlib. Creatin applications in Python ',
   },
   {
     id: 'id2',
     image: 'fab fa-react',
     main_text: 'React, Tailwind CSS',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero repellat molestias officiis! Adipisci, culpa exercitationem!',
+    description: 'Creating responsive web application with React and Tailwind',
   },
   {
     id: 'id3',
     image: 'fas fa-code',
     main_text: 'JavaScript, HTML, CSS',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero repellat molestias officiis! Adipisci, culpa exercitationem!',
+    description: 'Visually attractive web pages with JavaScript',
   },
   {
     id: 'id4',
     image: 'fab fa-github',
     main_text: 'Git',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero repellat molestias officiis! Adipisci, culpa exercitationem!',
+    description: 'Version control using git/github',
   },
   {
     id: 'id5',
     image: 'fas fa-database',
     main_text: 'Database, SQL',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero repellat molestias officiis! Adipisci, culpa exercitationem!',
+      "A relational database as PostgreSQL. I'm also acuained with Apache Spark",
   },
   {
     id: 'id6',
     image: 'fas fa-filter',
     main_text: 'Machine Learning, Artificial Intelligence',
-    description: 'continuously learn more ... ',
+    description: 'Creating and evaluating NN models with Tensorflow/Keras.',
   },
   {
     id: 'id7',
