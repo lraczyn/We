@@ -88,7 +88,7 @@ export default function Navbar() {
                   </ScrollTo>
                   <ScrollTo selector="#resume_">
                     <button className="inline-bloc border- hover:text-yellow-500 mx-4">
-                      <a href="https://drive.google.com/file/d/172DWsDl_EonmluavkjZUxQzzHoFfrgvF/view?usp=sharing">
+                      <a href="https://drive.google.com/file/d/1KHIN5cQA1omrjFyaQPCmfnsExohnEccU/view?usp=sharing">
                         <i className="fas fa-file pr-2"></i>
                         RESUME
                       </a>
